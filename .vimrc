@@ -23,3 +23,12 @@ autocmd Filetype markdown inoremap ;1 # <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;2 ## <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;3 ### <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;l ()[]<Esc>2hi
+
+
+autocmd Filetype tex nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+autocmd Filetype tex inoremap ;l \begin{itemize}<Enter>\item <Enter>\end{itemize}<Enter><Enter><++><Esc>kkkA
+autocmd Filetype tex inoremap ;8 \begin{enumerate}<Enter>\item <Enter>\end{enumerate}<Enter><Enter><++><Esc>kkkA
+autocmd Filetype tex inoremap ;b \textbf{} <++><Esc>5hi
+autocmd Filetype tex inoremap ;p \paragraph{} <++><Esc>5hi
+
+ 
