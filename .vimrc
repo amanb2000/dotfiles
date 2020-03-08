@@ -30,7 +30,8 @@ autocmd Filetype tex inoremap ;l \begin{itemize}<Enter>\item <Enter>\end{itemize
 autocmd Filetype tex inoremap ;8 \begin{enumerate}<Enter>\item <Enter>\end{enumerate}<Enter><Enter><Esc>kkkA
 autocmd Filetype tex inoremap ;b \textbf{} <Esc>1hi
 autocmd Filetype tex inoremap ;p \paragraph{} <Esc>1hi
-autocmd Filetype tex inoremap ;i \textit{} <Esc>1hi
+autocmd Filetype tex inoremap ;t \textit{} <Esc>1hi
 autocmd Filetype tex inoremap ;f \frac{}{<++>} <++><Esc>11hi
+autocmd Filetype tex inoremap ;i \item 
 
  
