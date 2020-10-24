@@ -17,12 +17,16 @@ autocmd Filetype python inoremap ;i <Esc>ggiimport sys<Enter>import os<Enter>imp
 
 autocmd Filetype python inoremap ;f def (#++#):<Enter><Tab>"""#++#"""<Enter><Tab><Enter><Tab>#++#<Enter><Enter><Esc>5k4li
 
+autocmd Filetype python inoremap ;c class :<Enter><Tab>"""#++#"""<Enter><Tab><Enter><Tab>def __init__(#++#):<Enter><Tab><Tab>#++#<Enter>
+
 
 autocmd Filetype markdown nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 autocmd Filetype markdown inoremap ;1 # <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;2 ## <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;3 ### <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;l ()[]<Esc>2hi
+autocmd Filetype markdown inoremap ;b ____ <++><Esc>6hi
+autocmd Filetype markdown inoremap ;l __ <++><Esc>5hi
 
 
 autocmd Filetype tex nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l
@@ -33,5 +37,7 @@ autocmd Filetype tex inoremap ;p \paragraph{} <Esc>1hi
 autocmd Filetype tex inoremap ;t \textit{} <Esc>1hi
 autocmd Filetype tex inoremap ;f \frac{}{<++>} <++><Esc>11hi
 autocmd Filetype tex inoremap ;i \item 
+autocmd Filetype tex inoremap ;e \begin{equation}<Enter><Enter>\end{equation}<Enter><++><Esc>kkA
 
+autocmd Filetype cpp
  
