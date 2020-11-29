@@ -38,6 +38,11 @@ autocmd Filetype tex inoremap ;t \textit{} <Esc>1hi
 autocmd Filetype tex inoremap ;f \frac{}{<++>} <++><Esc>11hi
 autocmd Filetype tex inoremap ;i \item 
 autocmd Filetype tex inoremap ;e \begin{equation}<Enter><Enter>\end{equation}<Enter><++><Esc>kkA
+autocmd Filetype tex inoremap ;c \begin{cases}<Enter><Enter>\end{cases}<Esc>kA
+autocmd Filetype tex inoremap ;su \sum_{}^{<++>} <++><Esc>12hi
+autocmd Filetype tex inoremap ;n \int_{}^{<++>} <++><Esc>12hi
+autocmd Filetype tex inoremap ;o \omega
+autocmd Filetype tex inoremap ;sc ^{()} <++><Esc>hhhhhhi
 
 autocmd Filetype cpp
  
