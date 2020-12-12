@@ -43,6 +43,15 @@ autocmd Filetype tex inoremap ;su \sum_{}^{<++>} <++><Esc>12hi
 autocmd Filetype tex inoremap ;n \int_{}^{<++>} <++><Esc>12hi
 autocmd Filetype tex inoremap ;o \omega
 autocmd Filetype tex inoremap ;sc ^{()} <++><Esc>hhhhhhi
+autocmd Filetype tex inoremap ;u \begin{theorem}{}<Enter><++><Enter>\end{theorem}<Enter><++><Esc>kkkA<Esc>i
+autocmd Filetype tex inoremap ;a \begin{algorithm}[H]<Enter>\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}<Enter>\SetAlgoLined<Enter>\Input{<++>}<Enter>\Output{<++>}<Enter><Tab>\BlankLine<Enter><Tab>\BlankLine<Enter><Tab>%\nlset{\color{blue}$O(n)$}Some order $n$ operation\;<Enter><Tab><++><Enter><Tab>\caption{<++>}<Enter>\end{algorithm}<Enter><++><Esc>11k8li
+autocmd Filetype tex inoremap ;; \;
+autocmd Filetype tex inoremap ;m \text{}<++><Esc>hhhhi
 
 autocmd Filetype cpp
- 
+
+" Editor shortcuts "
+
+" 1: Local file directory shortcut (:fl = file lookup = :! vi .)
+
+autocmd Filetype * nnoremap fl :! vi .<Enter><Enter>
