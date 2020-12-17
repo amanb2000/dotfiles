@@ -38,7 +38,8 @@ autocmd Filetype tex inoremap ;p \paragraph{} <Esc>1hi
 autocmd Filetype tex inoremap ;t \textit{} <Esc>1hi
 autocmd Filetype tex inoremap ;f \frac{}{<++>} <++><Esc>11hi
 autocmd Filetype tex inoremap ;i \item 
-autocmd Filetype tex inoremap ;e \begin{equation}<Enter><Enter>\end{equation}<Enter><++><Esc>kkA
+autocmd Filetype tex inoremap ;eq \begin{equation}<Enter><Enter>\end{equation}<Enter><++><Esc>kkA
+autocmd Filetype tex inoremap ;ea \begin{align}<Enter><Enter>\end{align}<Enter><++><Esc>kkA
 autocmd Filetype tex inoremap ;c \begin{cases}<Enter><Enter>\end{cases}<Esc>kA
 autocmd Filetype tex inoremap ;su \sum_{}^{<++>} <++><Esc>12hi
 autocmd Filetype tex inoremap ;n \int_{}^{<++>} <++><Esc>12hi
@@ -48,6 +49,7 @@ autocmd Filetype tex inoremap ;u \begin{theorem}{}<Enter><++><Enter>\end{theorem
 autocmd Filetype tex inoremap ;a \begin{algorithm}[H]<Enter>\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}<Enter>\SetAlgoLined<Enter>\Input{<++>}<Enter>\Output{<++>}<Enter><Tab>\BlankLine<Enter><Tab>\BlankLine<Enter><Tab>%\nlset{\color{blue}$O(n)$}Some order $n$ operation\;<Enter><Tab><++><Enter><Tab>\caption{<++>}<Enter>\end{algorithm}<Enter><++><Esc>11k8li
 autocmd Filetype tex inoremap ;; \;
 autocmd Filetype tex inoremap ;m \text{}<++><Esc>hhhhi
+autocmd Filetype tex inoremap ;j e^{j\omega} 
 
 autocmd Filetype cpp
 
