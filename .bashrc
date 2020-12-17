@@ -117,6 +117,37 @@ if ! shopt -oq posix; then
 fi
 
 
-# Some additional custom aliases
+# Some additional custom aliases for Python
 
 alias 3='python3'
+alias nvenv='virtualenv venv && source venv/bin/activate'
+alias evenv='source venv/bin/activate'
+alias dvenv='deactivate'
+
+# Aliases for ease of navigation (opening folders from the terminal -> files, etc.)
+
+alias open='xdg-open'
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/aman/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/aman/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/aman/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/aman/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+conda deactivate
+# <<< conda initialize <<<
+
+
+
+
+export PATH="$PATH:/home/aman/julia-1.5.3/bin"
