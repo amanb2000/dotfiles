@@ -53,12 +53,6 @@ autocmd Filetype tex inoremap ;j e^{j\omega}
 
 autocmd Filetype cpp
 
-" Editor shortcuts "
-
-" 1: Local file directory shortcut (:fl = file lookup = :! vi .)
-
-autocmd Filetype * nnoremap fl :! vi .<Enter><Enter>
-
 
 " vim-plug Setup"
 
