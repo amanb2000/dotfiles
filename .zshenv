@@ -11,8 +11,7 @@ alias 5='./a.out'
 alias clog='sudo rm -rf  /private/var/log/asl/*.asl'
 
 # AESTHETICS
-export PS1="Diogenes:~$ "
-export PROMPT='%F{blue}%1~%f %# '
+# export PROMPT='%F{blue}Diogenes~%f %# '
 
 # Python Virtual Environments
 alias nvenv="python3 -m venv env"
