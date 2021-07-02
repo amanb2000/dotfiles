@@ -28,6 +28,9 @@ autocmd Filetype markdown inoremap ;3 ### <Enter><Enter><++><Esc>2kA
 autocmd Filetype markdown inoremap ;l ()[]<Esc>2hi
 autocmd Filetype markdown inoremap ;b ____ <++><Esc>6hi
 autocmd Filetype markdown inoremap ;l __ <++><Esc>5hi
+autocmd Filetype markdown inoremap ;i <Space>-<Space>[<Space>]<Space>
+autocmd Filetype markdown inoremap ;j <Space>-<Space>
+
 
 
 autocmd Filetype tex nnoremap <Space><Space> <Esc>/<++><Enter>"_c4l

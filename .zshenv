@@ -9,6 +9,7 @@ alias 3='python3'
 alias 4='gcc -pedantic'
 alias 5='./a.out'
 alias clog='sudo rm -rf  /private/var/log/asl/*.asl'
+alias td='./td.sh'
 
 # AESTHETICS
 # export PROMPT='%F{blue}Diogenes~%f %# '
